@@ -97,6 +97,7 @@
 		4919B58F16F437C0002BE911 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4919B59A16F437DA002BE911 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		4919B59C16F43B02002BE911 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4938CA5816F44FE0000545E5 /* Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +196,7 @@
 				4919B55F16F4338A002BE911 /* second.png */,
 				4919B56116F4338A002BE911 /* second@2x.png */,
 				4919B53E16F4338A002BE911 /* Supporting Files */,
+				4938CA5816F44FE0000545E5 /* Private.h */,
 			);
 			path = BixiTO;
 			sourceTree = "<group>";
