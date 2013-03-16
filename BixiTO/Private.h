@@ -9,6 +9,6 @@
 #ifndef BixiTO_Private_h
 #define BixiTO_Private_h
 
-#define GOOGLEMAPSAPIKEY @"AIzaSyCXytEtX3sfi0efW-ew45mmGm6r_eQHxBw"
+#define GOOGLEMAPSAPIKEY @""
 
 #endif
