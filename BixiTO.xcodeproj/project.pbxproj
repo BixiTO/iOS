@@ -17,11 +17,10 @@
 		4919B54C16F4338A002BE911 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54B16F4338A002BE911 /* Default@2x.png */; };
 		4919B54E16F4338A002BE911 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54D16F4338A002BE911 /* Default-568h@2x.png */; };
 		4919B55116F4338A002BE911 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54F16F4338A002BE911 /* MainStoryboard_iPhone.storyboard */; };
-		4919B55416F4338A002BE911 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4919B55216F4338A002BE911 /* MainStoryboard_iPad.storyboard */; };
-		4919B55716F4338A002BE911 /* bixitoFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B55616F4338A002BE911 /* bixitoFirstViewController.m */; };
+		4919B55716F4338A002BE911 /* bixitoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B55616F4338A002BE911 /* bixitoListViewController.m */; };
 		4919B55916F4338A002BE911 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B55816F4338A002BE911 /* first.png */; };
 		4919B55B16F4338A002BE911 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B55A16F4338A002BE911 /* first@2x.png */; };
-		4919B55E16F4338A002BE911 /* bixitoSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B55D16F4338A002BE911 /* bixitoSecondViewController.m */; };
+		4919B55E16F4338A002BE911 /* bixitoMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B55D16F4338A002BE911 /* bixitoMapViewController.m */; };
 		4919B56016F4338A002BE911 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B55F16F4338A002BE911 /* second.png */; };
 		4919B56216F4338A002BE911 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B56116F4338A002BE911 /* second@2x.png */; };
 		4919B56A16F4338A002BE911 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B56916F4338A002BE911 /* SenTestingKit.framework */; };
@@ -29,6 +28,20 @@
 		4919B56C16F4338A002BE911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B53916F4338A002BE911 /* Foundation.framework */; };
 		4919B57416F4338A002BE911 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4919B57216F4338A002BE911 /* InfoPlist.strings */; };
 		4919B57716F4338A002BE911 /* BixiTOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B57616F4338A002BE911 /* BixiTOTests.m */; };
+		4919B58116F43695002BE911 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58016F43695002BE911 /* GoogleMaps.framework */; };
+		4919B58516F43747002BE911 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58416F43747002BE911 /* AVFoundation.framework */; };
+		4919B59016F437C0002BE911 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58616F437C0002BE911 /* CoreData.framework */; };
+		4919B59116F437C0002BE911 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58716F437C0002BE911 /* CoreLocation.framework */; };
+		4919B59216F437C0002BE911 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58816F437C0002BE911 /* GLKit.framework */; };
+		4919B59316F437C0002BE911 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58916F437C0002BE911 /* ImageIO.framework */; };
+		4919B59416F437C0002BE911 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58A16F437C0002BE911 /* libicucore.dylib */; };
+		4919B59516F437C0002BE911 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58B16F437C0002BE911 /* libstdc++.dylib */; };
+		4919B59616F437C0002BE911 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58C16F437C0002BE911 /* libz.dylib */; };
+		4919B59716F437C0002BE911 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58D16F437C0002BE911 /* OpenGLES.framework */; };
+		4919B59816F437C0002BE911 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58E16F437C0002BE911 /* QuartzCore.framework */; };
+		4919B59916F437C0002BE911 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58F16F437C0002BE911 /* SystemConfiguration.framework */; };
+		4919B59B16F437DA002BE911 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4919B59A16F437DA002BE911 /* GoogleMaps.bundle */; };
+		4919B59D16F43B02002BE911 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B59C16F43B02002BE911 /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +69,12 @@
 		4919B54B16F4338A002BE911 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4919B54D16F4338A002BE911 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4919B55016F4338A002BE911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		4919B55316F4338A002BE911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		4919B55516F4338A002BE911 /* bixitoFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bixitoFirstViewController.h; sourceTree = "<group>"; };
-		4919B55616F4338A002BE911 /* bixitoFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bixitoFirstViewController.m; sourceTree = "<group>"; };
+		4919B55516F4338A002BE911 /* bixitoListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bixitoListViewController.h; sourceTree = "<group>"; };
+		4919B55616F4338A002BE911 /* bixitoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bixitoListViewController.m; sourceTree = "<group>"; };
 		4919B55816F4338A002BE911 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		4919B55A16F4338A002BE911 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		4919B55C16F4338A002BE911 /* bixitoSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bixitoSecondViewController.h; sourceTree = "<group>"; };
-		4919B55D16F4338A002BE911 /* bixitoSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bixitoSecondViewController.m; sourceTree = "<group>"; };
+		4919B55C16F4338A002BE911 /* bixitoMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bixitoMapViewController.h; sourceTree = "<group>"; };
+		4919B55D16F4338A002BE911 /* bixitoMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bixitoMapViewController.m; sourceTree = "<group>"; };
 		4919B55F16F4338A002BE911 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		4919B56116F4338A002BE911 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		4919B56816F4338A002BE911 /* BixiTOTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BixiTOTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +83,21 @@
 		4919B57316F4338A002BE911 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4919B57516F4338A002BE911 /* BixiTOTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BixiTOTests.h; sourceTree = "<group>"; };
 		4919B57616F4338A002BE911 /* BixiTOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BixiTOTests.m; sourceTree = "<group>"; };
+		4919B58016F43695002BE911 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		4919B58416F43747002BE911 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4919B58616F437C0002BE911 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4919B58716F437C0002BE911 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4919B58816F437C0002BE911 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		4919B58916F437C0002BE911 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4919B58A16F437C0002BE911 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4919B58B16F437C0002BE911 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		4919B58C16F437C0002BE911 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4919B58D16F437C0002BE911 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4919B58E16F437C0002BE911 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4919B58F16F437C0002BE911 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4919B59A16F437DA002BE911 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		4919B59C16F43B02002BE911 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		4976CC2116F4435F00B26EAE /* Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +105,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4919B59D16F43B02002BE911 /* CoreText.framework in Frameworks */,
+				4919B59016F437C0002BE911 /* CoreData.framework in Frameworks */,
+				4919B59116F437C0002BE911 /* CoreLocation.framework in Frameworks */,
+				4919B59216F437C0002BE911 /* GLKit.framework in Frameworks */,
+				4919B59316F437C0002BE911 /* ImageIO.framework in Frameworks */,
+				4919B59416F437C0002BE911 /* libicucore.dylib in Frameworks */,
+				4919B59516F437C0002BE911 /* libstdc++.dylib in Frameworks */,
+				4919B59616F437C0002BE911 /* libz.dylib in Frameworks */,
+				4919B59716F437C0002BE911 /* OpenGLES.framework in Frameworks */,
+				4919B59816F437C0002BE911 /* QuartzCore.framework in Frameworks */,
+				4919B59916F437C0002BE911 /* SystemConfiguration.framework in Frameworks */,
+				4919B58516F43747002BE911 /* AVFoundation.framework in Frameworks */,
 				4919B53816F4338A002BE911 /* UIKit.framework in Frameworks */,
 				4919B53A16F4338A002BE911 /* Foundation.framework in Frameworks */,
 				4919B53C16F4338A002BE911 /* CoreGraphics.framework in Frameworks */,
+				4919B58116F43695002BE911 /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +140,18 @@
 		4919B52B16F4338A002BE911 = {
 			isa = PBXGroup;
 			children = (
+				4919B59C16F43B02002BE911 /* CoreText.framework */,
+				4919B58616F437C0002BE911 /* CoreData.framework */,
+				4919B58716F437C0002BE911 /* CoreLocation.framework */,
+				4919B58816F437C0002BE911 /* GLKit.framework */,
+				4919B58916F437C0002BE911 /* ImageIO.framework */,
+				4919B58A16F437C0002BE911 /* libicucore.dylib */,
+				4919B58B16F437C0002BE911 /* libstdc++.dylib */,
+				4919B58C16F437C0002BE911 /* libz.dylib */,
+				4919B58D16F437C0002BE911 /* OpenGLES.framework */,
+				4919B58E16F437C0002BE911 /* QuartzCore.framework */,
+				4919B58F16F437C0002BE911 /* SystemConfiguration.framework */,
+				4919B58416F43747002BE911 /* AVFoundation.framework */,
 				4919B53D16F4338A002BE911 /* BixiTO */,
 				4919B56F16F4338A002BE911 /* BixiTOTests */,
 				4919B53616F4338A002BE911 /* Frameworks */,
@@ -119,6 +171,8 @@
 		4919B53616F4338A002BE911 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4919B59A16F437DA002BE911 /* GoogleMaps.bundle */,
+				4919B58016F43695002BE911 /* GoogleMaps.framework */,
 				4919B53716F4338A002BE911 /* UIKit.framework */,
 				4919B53916F4338A002BE911 /* Foundation.framework */,
 				4919B53B16F4338A002BE911 /* CoreGraphics.framework */,
@@ -133,16 +187,16 @@
 				4919B54616F4338A002BE911 /* bixitoAppDelegate.h */,
 				4919B54716F4338A002BE911 /* bixitoAppDelegate.m */,
 				4919B54F16F4338A002BE911 /* MainStoryboard_iPhone.storyboard */,
-				4919B55216F4338A002BE911 /* MainStoryboard_iPad.storyboard */,
-				4919B55516F4338A002BE911 /* bixitoFirstViewController.h */,
-				4919B55616F4338A002BE911 /* bixitoFirstViewController.m */,
+				4919B55516F4338A002BE911 /* bixitoListViewController.h */,
+				4919B55616F4338A002BE911 /* bixitoListViewController.m */,
 				4919B55816F4338A002BE911 /* first.png */,
 				4919B55A16F4338A002BE911 /* first@2x.png */,
-				4919B55C16F4338A002BE911 /* bixitoSecondViewController.h */,
-				4919B55D16F4338A002BE911 /* bixitoSecondViewController.m */,
+				4919B55C16F4338A002BE911 /* bixitoMapViewController.h */,
+				4919B55D16F4338A002BE911 /* bixitoMapViewController.m */,
 				4919B55F16F4338A002BE911 /* second.png */,
 				4919B56116F4338A002BE911 /* second@2x.png */,
 				4919B53E16F4338A002BE911 /* Supporting Files */,
+				4976CC2116F4435F00B26EAE /* Private.h */,
 			);
 			path = BixiTO;
 			sourceTree = "<group>";
@@ -257,11 +311,11 @@
 				4919B54C16F4338A002BE911 /* Default@2x.png in Resources */,
 				4919B54E16F4338A002BE911 /* Default-568h@2x.png in Resources */,
 				4919B55116F4338A002BE911 /* MainStoryboard_iPhone.storyboard in Resources */,
-				4919B55416F4338A002BE911 /* MainStoryboard_iPad.storyboard in Resources */,
 				4919B55916F4338A002BE911 /* first.png in Resources */,
 				4919B55B16F4338A002BE911 /* first@2x.png in Resources */,
 				4919B56016F4338A002BE911 /* second.png in Resources */,
 				4919B56216F4338A002BE911 /* second@2x.png in Resources */,
+				4919B59B16F437DA002BE911 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +352,8 @@
 			files = (
 				4919B54416F4338A002BE911 /* main.m in Sources */,
 				4919B54816F4338A002BE911 /* bixitoAppDelegate.m in Sources */,
-				4919B55716F4338A002BE911 /* bixitoFirstViewController.m in Sources */,
-				4919B55E16F4338A002BE911 /* bixitoSecondViewController.m in Sources */,
+				4919B55716F4338A002BE911 /* bixitoListViewController.m in Sources */,
+				4919B55E16F4338A002BE911 /* bixitoMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,14 +392,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		4919B55216F4338A002BE911 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4919B55316F4338A002BE911 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		4919B57216F4338A002BE911 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -384,8 +431,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -409,8 +458,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -418,10 +468,15 @@
 		4919B57B16F4338A002BE911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BixiTO/BixiTO-Prefix.pch";
 				INFOPLIST_FILE = "BixiTO/BixiTO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -429,10 +484,15 @@
 		4919B57C16F4338A002BE911 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BixiTO/BixiTO-Prefix.pch";
 				INFOPLIST_FILE = "BixiTO/BixiTO-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -490,6 +550,7 @@
 				4919B57C16F4338A002BE911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4919B57D16F4338A002BE911 /* Build configuration list for PBXNativeTarget "BixiTOTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +559,7 @@
 				4919B57F16F4338A002BE911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
