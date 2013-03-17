@@ -8,13 +8,12 @@
 
 #import "bixitoAppDelegate.h"
 #import <GoogleMaps/GoogleMaps.h>
-#import "Private.h"
 
 @implementation bixitoAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [GMSServices provideAPIKey:GOOGLEMAPSAPIKEY];
+    [GMSServices provideAPIKey:@"AIzaSyAzOXxUvqlspK6rXVGmkuyNg_0wUy9dq8s"];
     // Override point for customization after application launch.
     return YES;
 }
