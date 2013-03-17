@@ -23,18 +23,19 @@
 
 - (void)loadView {
     
-    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.8683
-                                                            longitude:151.2086
-                                                                 zoom:6];
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.65
+                                                            longitude:-79.40
+                                                                 zoom:11];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
     
     GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
-    options.position = CLLocationCoordinate2DMake(-33.8683, 151.2086);
-    options.title = @"Ontario";
-    options.snippet = @"Canada";
-    [mapView_ addMarkerWithOptions:options];
+    
+    //options.position = CLLocationCoordinate2DMake(-33.8683, 151.2086);
+    //options.title = @"Ontario";
+    //options.snippet = @"Canada";
+    //[mapView_ addMarkerWithOptions:options];
 }
 
 - (void)didReceiveMemoryWarning
