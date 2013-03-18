@@ -43,7 +43,6 @@
 		4919B59B16F437DA002BE911 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4919B59A16F437DA002BE911 /* GoogleMaps.bundle */; };
 		4919B59D16F43B02002BE911 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B59C16F43B02002BE911 /* CoreText.framework */; };
 		496F627B16F6B715002B3841 /* BikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F627A16F6B715002B3841 /* BikeStation.m */; };
-		496F627F16F6CFBC002B3841 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F627E16F6CFBC002B3841 /* XMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +100,6 @@
 		4919B59C16F43B02002BE911 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		496F627916F6B715002B3841 /* BikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BikeStation.h; path = station/BikeStation.h; sourceTree = "<group>"; };
 		496F627A16F6B715002B3841 /* BikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeStation.m; path = station/BikeStation.m; sourceTree = "<group>"; };
-		496F627D16F6CFBC002B3841 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = station/XMLParser.h; sourceTree = "<group>"; };
-		496F627E16F6CFBC002B3841 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = station/XMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,8 +241,6 @@
 			children = (
 				496F627916F6B715002B3841 /* BikeStation.h */,
 				496F627A16F6B715002B3841 /* BikeStation.m */,
-				496F627D16F6CFBC002B3841 /* XMLParser.h */,
-				496F627E16F6CFBC002B3841 /* XMLParser.m */,
 			);
 			name = Station;
 			sourceTree = "<group>";
@@ -385,7 +380,6 @@
 				4919B55716F4338A002BE911 /* bixitoListViewController.m in Sources */,
 				4919B55E16F4338A002BE911 /* bixitoMapViewController.m in Sources */,
 				496F627B16F6B715002B3841 /* BikeStation.m in Sources */,
-				496F627F16F6CFBC002B3841 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

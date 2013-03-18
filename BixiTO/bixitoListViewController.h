@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "station/BikeStation.h"
 
-@interface bixitoFirstViewController : UIViewController
+@interface bixitoFirstViewController : UIViewController{
+    NSMutableArray *stationList;
+    NSMutableString *nodeContent;
+    NSXMLParser *xmlParserObject;
+    NSString *xmlFileURL;
+    BikeStation *currentBikeStation;
+}
 
 @end
