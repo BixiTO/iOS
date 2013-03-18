@@ -8,7 +8,7 @@
 
 #import "bixitoMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
-
+#import "Station/BikeStation.h"
 
 @interface bixitoSecondViewController ()
 
@@ -29,9 +29,8 @@
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
-    
+
     GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
-    
     //options.position = CLLocationCoordinate2DMake(-33.8683, 151.2086);
     //options.title = @"Ontario";
     //options.snippet = @"Canada";

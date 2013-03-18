@@ -42,6 +42,8 @@
 		4919B59916F437C0002BE911 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58F16F437C0002BE911 /* SystemConfiguration.framework */; };
 		4919B59B16F437DA002BE911 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4919B59A16F437DA002BE911 /* GoogleMaps.bundle */; };
 		4919B59D16F43B02002BE911 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B59C16F43B02002BE911 /* CoreText.framework */; };
+		496F627B16F6B715002B3841 /* BikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F627A16F6B715002B3841 /* BikeStation.m */; };
+		496F627F16F6CFBC002B3841 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F627E16F6CFBC002B3841 /* XMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,10 @@
 		4919B58F16F437C0002BE911 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4919B59A16F437DA002BE911 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		4919B59C16F43B02002BE911 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		496F627916F6B715002B3841 /* BikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BikeStation.h; path = station/BikeStation.h; sourceTree = "<group>"; };
+		496F627A16F6B715002B3841 /* BikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeStation.m; path = station/BikeStation.m; sourceTree = "<group>"; };
+		496F627D16F6CFBC002B3841 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = station/XMLParser.h; sourceTree = "<group>"; };
+		496F627E16F6CFBC002B3841 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = station/XMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,7 @@
 		4919B53D16F4338A002BE911 /* BixiTO */ = {
 			isa = PBXGroup;
 			children = (
+				496F627C16F6B72A002B3841 /* Station */,
 				4919B54616F4338A002BE911 /* bixitoAppDelegate.h */,
 				4919B54716F4338A002BE911 /* bixitoAppDelegate.m */,
 				4919B54F16F4338A002BE911 /* MainStoryboard_iPhone.storyboard */,
@@ -232,6 +239,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		496F627C16F6B72A002B3841 /* Station */ = {
+			isa = PBXGroup;
+			children = (
+				496F627916F6B715002B3841 /* BikeStation.h */,
+				496F627A16F6B715002B3841 /* BikeStation.m */,
+				496F627D16F6CFBC002B3841 /* XMLParser.h */,
+				496F627E16F6CFBC002B3841 /* XMLParser.m */,
+			);
+			name = Station;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +260,7 @@
 				4919B53016F4338A002BE911 /* Sources */,
 				4919B53116F4338A002BE911 /* Frameworks */,
 				4919B53216F4338A002BE911 /* Resources */,
+				50524F424C454D533F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -341,6 +360,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		50524F424C454D533F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,6 +384,8 @@
 				4919B54816F4338A002BE911 /* bixitoAppDelegate.m in Sources */,
 				4919B55716F4338A002BE911 /* bixitoListViewController.m in Sources */,
 				4919B55E16F4338A002BE911 /* bixitoMapViewController.m in Sources */,
+				496F627B16F6B715002B3841 /* BikeStation.m in Sources */,
+				496F627F16F6CFBC002B3841 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +448,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -448,7 +482,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
