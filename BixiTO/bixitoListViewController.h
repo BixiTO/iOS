@@ -8,14 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "station/BikeStation.h"
+#import "bixitoAppDelegate.h"
 
+@class bixitoAppDelegate;
 
 @interface bixitoListViewController : UITableViewController{
-    NSMutableArray *stationList;
-    NSMutableString *nodeContent;
-    NSXMLParser *xmlParserObject;
-    NSString *xmlFileURL;
-    BikeStation *currentBikeStation;
 }
+
+@property (nonatomic,assign) NSMutableArray *stationList;
 
 @end

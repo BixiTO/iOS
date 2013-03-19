@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "station/BikeStation.h"
 
-@interface bixitoAppDelegate : UIResponder <UIApplicationDelegate>
+
+@interface bixitoAppDelegate : UIResponder <UIApplicationDelegate>{
+    NSMutableString *nodeContent;
+    NSXMLParser *xmlParserObject;
+    NSString *xmlFileURL;
+    BikeStation *currentBikeStation;
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) NSMutableArray *stationList;
 
 @end
