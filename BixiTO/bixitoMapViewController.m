@@ -9,6 +9,7 @@
 #import "bixitoMapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "Station/BikeStation.h"
+#import "bixitoAppDelegate.h"
 
 @interface bixitoSecondViewController ()
 
@@ -23,6 +24,9 @@
 
 - (void)loadView {
     
+    bixitoAppDelegate* delegate = (bixitoAppDelegate*) [[UIApplication sharedApplication] delegate];
+    self.stationList = delegate.stationList;
+    
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.65
                                                             longitude:-79.40
                                                                  zoom:11];
@@ -30,7 +34,22 @@
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
 
-    GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
+    //GMSMarkerOptions *options = [[GMSMarkerOptions alloc] init];
+    
+    
+    GMSMarkerOptions *currentMarker;
+    self.markerList = [[NSMutableArray alloc] init];
+    
+    for(BikeStation *currentStation in self.stationList){
+        currentMarker = [[GMSMarkerOptions alloc] init];
+        
+        currentMarker.position = CLLocationCoordinate2DMake([currentStation latitude], [currentStation longitude]);
+        currentMarker.title = [currentStation stationName];
+        currentMarker.snippet = [NSString stringWithFormat:@"Bikes Available: %d, Empty Docks: %d", [currentStation nbBikes], [currentStation nbEmptyBikes]];
+        [mapView_ addMarkerWithOptions:currentMarker];
+        [self.markerList addObject:currentMarker];
+    }
+    
     //options.position = CLLocationCoordinate2DMake(-33.8683, 151.2086);
     //options.title = @"Ontario";
     //options.snippet = @"Canada";

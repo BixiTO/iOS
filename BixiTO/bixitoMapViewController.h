@@ -10,4 +10,7 @@
 
 @interface bixitoSecondViewController : UIViewController
 
+@property (nonatomic, assign) NSMutableArray *stationList;
+@property (nonatomic, strong) NSMutableArray *markerList;
+
 @end
