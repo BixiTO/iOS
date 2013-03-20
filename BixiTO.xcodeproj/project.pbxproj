@@ -47,6 +47,8 @@
 		49A2880116F909E200A46585 /* btnCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A287FB16F909E200A46585 /* btnCheck@2x.png */; };
 		49A2880216F909E200A46585 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A287FD16F909E200A46585 /* HUD.m */; };
 		49A2880316F909E200A46585 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A287FF16F909E200A46585 /* MBProgressHUD.m */; };
+		49B8EC1B16FA3B7A00E61E62 /* bixi_ios_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8EC1A16FA3B7A00E61E62 /* bixi_ios_icon_114.png */; };
+		49B8EC1D16FA3B7E00E61E62 /* bixi_ios_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8EC1C16FA3B7E00E61E62 /* bixi_ios_icon_57.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		49A287FD16F909E200A46585 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
 		49A287FE16F909E200A46585 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		49A287FF16F909E200A46585 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		49B8EC1A16FA3B7A00E61E62 /* bixi_ios_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_ios_icon_114.png; sourceTree = "<group>"; };
+		49B8EC1C16FA3B7E00E61E62 /* bixi_ios_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_ios_icon_57.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 		4919B52B16F4338A002BE911 = {
 			isa = PBXGroup;
 			children = (
+				49B8EC1C16FA3B7E00E61E62 /* bixi_ios_icon_57.png */,
+				49B8EC1A16FA3B7A00E61E62 /* bixi_ios_icon_114.png */,
 				4919B59C16F43B02002BE911 /* CoreText.framework */,
 				4919B58616F437C0002BE911 /* CoreData.framework */,
 				4919B58716F437C0002BE911 /* CoreLocation.framework */,
@@ -354,6 +360,8 @@
 				4919B59B16F437DA002BE911 /* GoogleMaps.bundle in Resources */,
 				49A2880016F909E200A46585 /* btnCheck.png in Resources */,
 				49A2880116F909E200A46585 /* btnCheck@2x.png in Resources */,
+				49B8EC1B16FA3B7A00E61E62 /* bixi_ios_icon_114.png in Resources */,
+				49B8EC1D16FA3B7E00E61E62 /* bixi_ios_icon_57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

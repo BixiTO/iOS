@@ -13,8 +13,13 @@
 @class bixitoAppDelegate;
 
 @interface bixitoListViewController : UITableViewController{
+    NSMutableString *nodeContent;
+    NSXMLParser *xmlParserObject;
+    NSString *xmlFileURL;
+    BikeStation *currentBikeStation;
+    
 }
 
-@property (nonatomic,assign) NSMutableArray *stationList;
+@property (nonatomic,retain) NSMutableArray *stationList;
 
 @end
