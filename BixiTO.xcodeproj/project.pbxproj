@@ -108,6 +108,7 @@
 		497D40D016F78600003195CB /* bixitoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bixitoListViewController.m; sourceTree = "<group>"; };
 		498EC41716FABD6E00489558 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "../../../../../Downloads/MBProgressHUD-master/MBProgressHUD.h"; sourceTree = "<group>"; };
 		498EC41816FABD6E00489558 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "../../../../../Downloads/MBProgressHUD-master/MBProgressHUD.m"; sourceTree = "<group>"; };
+		498EC41A16FAC88000489558 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		49A287FA16F909E200A46585 /* btnCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnCheck.png; sourceTree = "<group>"; };
 		49A287FB16F909E200A46585 /* btnCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCheck@2x.png"; sourceTree = "<group>"; };
 		49A287FC16F909E200A46585 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 		4919B52B16F4338A002BE911 = {
 			isa = PBXGroup;
 			children = (
+				498EC41A16FAC88000489558 /* Default-568h@2x.png */,
 				49B8EC1C16FA3B7E00E61E62 /* bixi_ios_icon_57.png */,
 				49B8EC1A16FA3B7A00E61E62 /* bixi_ios_icon_114.png */,
 				4919B59C16F43B02002BE911 /* CoreText.framework */,

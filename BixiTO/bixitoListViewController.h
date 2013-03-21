@@ -17,6 +17,7 @@
     NSXMLParser *xmlParserObject;
     NSString *xmlFileURL;
     BikeStation *currentBikeStation;
+    bixitoAppDelegate* delegate;
     
 }
 

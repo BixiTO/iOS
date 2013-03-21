@@ -28,50 +28,56 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.stationList = [[NSMutableArray alloc] init];
+    nodeContent = [[NSMutableString alloc] init];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 
-    //Use MBProgressHUD to displaying a loading dialog while parsing the list
-    
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeIndeterminate;
-    hud.labelText = @"Loading";
-    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-        //Code to run
-        [self updateStationList];
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        [self.tableView reloadData];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
-        });
-    });
-    
-    
-    
+    delegate = (bixitoAppDelegate*) [[UIApplication sharedApplication] delegate];
 
-
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(updateStationList) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    [self updateStationList];
     
-
+    
+    
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 -(void)updateStationList{
-    NSData *xmlData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: @"http://bixitodb.appspot.com/remote/getBixiData"]];
-    xmlParserObject = [[NSXMLParser alloc] initWithData: xmlData];
-    [xmlParserObject setDelegate:self];
-    [xmlParserObject parse];
+    [self.tableView reloadData];
     
-    bixitoAppDelegate* delegate = (bixitoAppDelegate*) [[UIApplication sharedApplication] delegate];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.01 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        // Do something...
+        self.stationList = [[NSMutableArray alloc] init];
+
+        NSData *xmlData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: @"http://bixitodb.appspot.com/remote/getBixiData"]];
+        xmlParserObject = [[NSXMLParser alloc] initWithData: xmlData];
+        [xmlParserObject setDelegate:self];
+        [xmlParserObject parse];
+        
+        
+        delegate.stationList = self.stationList;
+        NSLog(@"I finished parsing");
+        NSLog([NSString stringWithFormat:@"Found : %d Stations", [self.stationList count]]);
+        [self.tableView reloadData];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+    });
     
-    delegate.stationList = self.stationList;
+    
+    [self.refreshControl endRefreshing];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-   
+
 }
 
 -(void)viewDidAppear:(BOOL)animated:(BOOL)animated{
@@ -113,43 +119,43 @@
 }
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ }
+ else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 #pragma mark - Table view delegate
 
@@ -166,7 +172,7 @@
 
 -(void) parser: (NSXMLParser *) parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
     
-    if([elementName isEqualToString:@"station"]){
+    if([elementName isEqualToString:@"station"] || [elementName isEqualToString:@"stations"]){
         //If its the root tag, allocate a new station
         currentBikeStation = [[BikeStation alloc] init];
     }
@@ -221,9 +227,7 @@
     //Finished parsing the current station
     if([elementName isEqualToString:@"station"]){
         [self.stationList addObject:currentBikeStation];
-        //NSLog([NSString stringWithFormat:@"Adding station: %@", [currentBikeStation stationName]]);
     }
-    
     nodeContent = [[NSMutableString alloc] init];
 }
 
