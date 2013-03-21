@@ -8,7 +8,7 @@
 
 #import "bixitoListViewController.h"
 #import "bixitoAppDelegate.h"
-#import "HUD.h"
+#import "MBProgressHUD.h"
 
 @interface bixitoListViewController ()
 
@@ -30,26 +30,44 @@
     [super viewDidLoad];
     self.stationList = [[NSMutableArray alloc] init];
 
-    [HUD showUIBlockingIndicatorWithText:@"Loading..."];
-    NSData *xmlData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: @"http://bixitodb.appspot.com/remote/getBixiData"]];
-    xmlParserObject = [[NSXMLParser alloc] initWithData: xmlData];
-    [xmlParserObject setDelegate:self];
-    [xmlParserObject parse];
-
-
-    bixitoAppDelegate* delegate = (bixitoAppDelegate*) [[UIApplication sharedApplication] delegate];
-
-    delegate.stationList = self.stationList;
-    // Do any additional setup after loading the view, typically from a nib.
+    //Use MBProgressHUD to displaying a loading dialog while parsing the list
     
-    [self.tableView reloadData];
-    [HUD hideUIBlockingIndicator];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"Loading";
+    dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+        //Code to run
+        [self updateStationList];
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    });
+    
+    
+    
+
+
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)updateStationList{
+    NSData *xmlData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: @"http://bixitodb.appspot.com/remote/getBixiData"]];
+    xmlParserObject = [[NSXMLParser alloc] initWithData: xmlData];
+    [xmlParserObject setDelegate:self];
+    [xmlParserObject parse];
+    
+    bixitoAppDelegate* delegate = (bixitoAppDelegate*) [[UIApplication sharedApplication] delegate];
+    
+    delegate.stationList = self.stationList;
 }
 
 -(void)viewWillAppear:(BOOL)animated{

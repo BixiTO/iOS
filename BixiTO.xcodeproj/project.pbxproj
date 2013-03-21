@@ -43,10 +43,10 @@
 		4919B59D16F43B02002BE911 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B59C16F43B02002BE911 /* CoreText.framework */; };
 		496F627B16F6B715002B3841 /* BikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F627A16F6B715002B3841 /* BikeStation.m */; };
 		497D40D116F78600003195CB /* bixitoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497D40D016F78600003195CB /* bixitoListViewController.m */; };
+		498EC41916FABD6E00489558 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 498EC41816FABD6E00489558 /* MBProgressHUD.m */; };
 		49A2880016F909E200A46585 /* btnCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A287FA16F909E200A46585 /* btnCheck.png */; };
 		49A2880116F909E200A46585 /* btnCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A287FB16F909E200A46585 /* btnCheck@2x.png */; };
 		49A2880216F909E200A46585 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A287FD16F909E200A46585 /* HUD.m */; };
-		49A2880316F909E200A46585 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A287FF16F909E200A46585 /* MBProgressHUD.m */; };
 		49B8EC1B16FA3B7A00E61E62 /* bixi_ios_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8EC1A16FA3B7A00E61E62 /* bixi_ios_icon_114.png */; };
 		49B8EC1D16FA3B7E00E61E62 /* bixi_ios_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B8EC1C16FA3B7E00E61E62 /* bixi_ios_icon_57.png */; };
 /* End PBXBuildFile section */
@@ -106,12 +106,12 @@
 		496F627A16F6B715002B3841 /* BikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeStation.m; path = station/BikeStation.m; sourceTree = "<group>"; };
 		497D40CF16F78600003195CB /* bixitoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bixitoListViewController.h; sourceTree = "<group>"; };
 		497D40D016F78600003195CB /* bixitoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bixitoListViewController.m; sourceTree = "<group>"; };
+		498EC41716FABD6E00489558 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "../../../../../Downloads/MBProgressHUD-master/MBProgressHUD.h"; sourceTree = "<group>"; };
+		498EC41816FABD6E00489558 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "../../../../../Downloads/MBProgressHUD-master/MBProgressHUD.m"; sourceTree = "<group>"; };
 		49A287FA16F909E200A46585 /* btnCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnCheck.png; sourceTree = "<group>"; };
 		49A287FB16F909E200A46585 /* btnCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCheck@2x.png"; sourceTree = "<group>"; };
 		49A287FC16F909E200A46585 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
 		49A287FD16F909E200A46585 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
-		49A287FE16F909E200A46585 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		49A287FF16F909E200A46585 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		49B8EC1A16FA3B7A00E61E62 /* bixi_ios_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_ios_icon_114.png; sourceTree = "<group>"; };
 		49B8EC1C16FA3B7E00E61E62 /* bixi_ios_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_ios_icon_57.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,12 +265,12 @@
 		49A287F916F909E200A46585 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
+				498EC41716FABD6E00489558 /* MBProgressHUD.h */,
+				498EC41816FABD6E00489558 /* MBProgressHUD.m */,
 				49A287FA16F909E200A46585 /* btnCheck.png */,
 				49A287FB16F909E200A46585 /* btnCheck@2x.png */,
 				49A287FC16F909E200A46585 /* HUD.h */,
 				49A287FD16F909E200A46585 /* HUD.m */,
-				49A287FE16F909E200A46585 /* MBProgressHUD.h */,
-				49A287FF16F909E200A46585 /* MBProgressHUD.m */,
 			);
 			path = HUD;
 			sourceTree = "<group>";
@@ -415,7 +415,7 @@
 				496F627B16F6B715002B3841 /* BikeStation.m in Sources */,
 				497D40D116F78600003195CB /* bixitoListViewController.m in Sources */,
 				49A2880216F909E200A46585 /* HUD.m in Sources */,
-				49A2880316F909E200A46585 /* MBProgressHUD.m in Sources */,
+				498EC41916FABD6E00489558 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
