@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "bixitoAppDelegate.h"
+#import <GoogleMaps/GoogleMaps.h>
 
-@interface bixitoSecondViewController : UIViewController
+
+@interface bixitoSecondViewController : UIViewController{
+    bixitoAppDelegate* delegate;
+    GMSCameraPosition *camera;
+
+}
 
 @property (nonatomic, assign) NSMutableArray *stationList;
 @property (nonatomic, strong) NSMutableArray *markerList;
+@property (nonatomic) int selectedStationId;
 
 @end

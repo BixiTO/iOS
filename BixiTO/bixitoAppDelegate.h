@@ -16,9 +16,11 @@
     NSString *xmlFileURL;
     BikeStation *currentBikeStation;
     
+    
 }
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, retain) NSMutableArray *stationList;
+@property (nonatomic) NSString *selectedStationName;
 
 @end

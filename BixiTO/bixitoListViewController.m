@@ -9,6 +9,7 @@
 #import "bixitoListViewController.h"
 #import "bixitoAppDelegate.h"
 #import "MBProgressHUD.h"
+#import "bixitoMapViewController.h"
 
 @interface bixitoListViewController ()
 
@@ -27,6 +28,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"List viewdidLoad called");
     [super viewDidLoad];
     nodeContent = [[NSMutableString alloc] init];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
@@ -159,8 +161,17 @@
 
 #pragma mark - Table view delegate
 
+-(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    delegate.selectedStationName = [[self.stationList objectAtIndex: indexPath.row] stationName];
+    
+    return indexPath;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.tabBarController setSelectedIndex:1];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
