@@ -29,7 +29,7 @@
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:43.65
                                                             longitude:-79.40
-                                                                 zoom:11];
+                                                                 zoom:13];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
     self.view = mapView_;
@@ -46,9 +46,13 @@
         currentMarker.position = CLLocationCoordinate2DMake([currentStation latitude], [currentStation longitude]);
         currentMarker.title = [currentStation stationName];
         currentMarker.snippet = [NSString stringWithFormat:@"Bikes Available: %d, Empty Docks: %d", [currentStation nbBikes], [currentStation nbEmptyBikes]];
+        
         [mapView_ addMarkerWithOptions:currentMarker];
         [self.markerList addObject:currentMarker];
     }
+    
+    //Select a given marker:
+    //[mapView_ setSelectedMarker:[[mapView_ markers] objectAtIndex:1]];
     
     //options.position = CLLocationCoordinate2DMake(-33.8683, 151.2086);
     //options.title = @"Ontario";
