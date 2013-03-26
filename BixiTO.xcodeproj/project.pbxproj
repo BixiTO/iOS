@@ -51,7 +51,6 @@
 		4921563C17014AFE001B083C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921563B17014AFE001B083C /* Default-568h@2x.png */; };
 		4921563F17014C19001B083C /* home_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921563D17014C19001B083C /* home_30.png */; };
 		4921564017014C19001B083C /* globe_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921563E17014C19001B083C /* globe_30.png */; };
-		492D83A51700C54E00425407 /* home_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 492D83A41700C54E00425407 /* home_64.png */; };
 		496F627B16F6B715002B3841 /* BikeStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 496F627A16F6B715002B3841 /* BikeStation.m */; };
 		497D40D116F78600003195CB /* bixitoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497D40D016F78600003195CB /* bixitoListViewController.m */; };
 		498EC41916FABD6E00489558 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 498EC41816FABD6E00489558 /* MBProgressHUD.m */; };
@@ -123,7 +122,6 @@
 		4921563B17014AFE001B083C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4921563D17014C19001B083C /* home_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_30.png; sourceTree = "<group>"; };
 		4921563E17014C19001B083C /* globe_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_30.png; sourceTree = "<group>"; };
-		492D83A41700C54E00425407 /* home_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_64.png; sourceTree = "<group>"; };
 		496F627916F6B715002B3841 /* BikeStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BikeStation.h; path = station/BikeStation.h; sourceTree = "<group>"; };
 		496F627A16F6B715002B3841 /* BikeStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeStation.m; path = station/BikeStation.m; sourceTree = "<group>"; };
 		497D40CF16F78600003195CB /* bixitoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bixitoListViewController.h; sourceTree = "<group>"; };
@@ -231,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				4921562417014905001B083C /* images */,
-				492D83A41700C54E00425407 /* home_64.png */,
 				496F627C16F6B72A002B3841 /* Station */,
 				4919B54616F4338A002BE911 /* bixitoAppDelegate.h */,
 				4919B54716F4338A002BE911 /* bixitoAppDelegate.m */,
@@ -403,7 +400,6 @@
 				49A2880116F909E200A46585 /* btnCheck@2x.png in Resources */,
 				49B8EC1B16FA3B7A00E61E62 /* bixi_ios_icon_114.png in Resources */,
 				49B8EC1D16FA3B7E00E61E62 /* bixi_ios_icon_57.png in Resources */,
-				492D83A51700C54E00425407 /* home_64.png in Resources */,
 				4921562817014910001B083C /* bixi_default.png in Resources */,
 				4921562917014910001B083C /* bixi_default_retina.png in Resources */,
 				4921562A17014910001B083C /* bixi_default_4inch.png in Resources */,
