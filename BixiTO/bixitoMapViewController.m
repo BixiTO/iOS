@@ -49,13 +49,7 @@
         [self.markerList addObject:currentMarker];
     }
     
-    //Select a given marker:
-    //[mapView_ setSelectedMarker:[[mapView_ markers] objectAtIndex:1]];
-    
-    //options.position = CLLocationCoordinate2DMake(-33.8683, 151.2086);
-    //options.title = @"Ontario";
-    //options.snippet = @"Canada";
-    //[mapView_ addMarkerWithOptions:options];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,11 +66,12 @@
     else{
         int objectIndex = 0;
         int stationListIndex = 0;
+        
         for(int i = 0; i < [[mapView_ markers] count]; i++){
             if([[[[mapView_ markers] objectAtIndex:i] title] isEqualToString: delegate.selectedStationName]){
                 objectIndex = i;
-                for(int j = 0; j < [self.stationList count]; j++){
-                    if([[[self.stationList objectAtIndex:j] stationName] isEqualToString: delegate.selectedStationName]){
+                for(int j = 0; j < [delegate.stationList count]; j++){
+                    if([[[delegate.stationList objectAtIndex:j] stationName] isEqualToString: delegate.selectedStationName]){
                         stationListIndex = j;
                         break;
                     }
@@ -85,14 +80,9 @@
             }
         }
         [mapView_ setSelectedMarker: [[mapView_ markers] objectAtIndex:objectIndex]];
-        //NSLog(@"Told to select station %@, found this item at %d", delegate.selectedStationName, objectIndex);
-        //NSLog(@"Animating to these coordinates: %f , %f", [[self.stationList objectAtIndex:stationListIndex] latitude], [[self.stationList objectAtIndex:stationListIndex] longitude]);
-        [mapView_ animateToLocation:CLLocationCoordinate2DMake([[self.stationList objectAtIndex:stationListIndex] latitude], [[self.stationList objectAtIndex:stationListIndex] longitude])];
+        [mapView_ animateToLocation:CLLocationCoordinate2DMake([[delegate.stationList objectAtIndex:stationListIndex] latitude], [[delegate.stationList objectAtIndex:stationListIndex] longitude])];
         [mapView_ animateToZoom:18];
-        /*[mapView_ ca] = [GMSCameraPosition cameraWithLatitude: [[self.stationList objectAtIndex:stationListIndex] latitude]
-                                    longitude: [[self.stationList objectAtIndex:stationListIndex] longitude]
-                                         zoom:18];
-        */
+    
         delegate.selectedStationName = @"";
     }
 }
