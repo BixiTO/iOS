@@ -14,8 +14,8 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>bixi_ios_icon_114.png</string>
-				<string>bixi_ios_icon_57.png</string>
+				<string>bixi_icon_retina.png</string>
+				<string>bixi_icon.png</string>
 			</array>
 		</dict>
 	</dict>

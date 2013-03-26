@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController id="mlO-8m-4WU" customClass="bixitoListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="l6r-0I-3to">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -41,6 +41,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4gW-mg-Vva"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUj-lh-d50" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="globe_30.png" id="6"/>
                     <navigationItem key="navigationItem" id="OZC-nG-7aa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -85,9 +86,10 @@
         <!--Navigation Controller - List-->
         <scene sceneID="GV5-as-rOa">
             <objects>
-                <navigationController id="4wF-J9-Ti7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" image="first.png" id="7"/>
+                <navigationController navigationBarHidden="YES" id="4wF-J9-Ti7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" image="home_30.png" id="7"/>
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XhS-8b-KFD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -103,8 +105,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first.png" width="30" height="30"/>
-        <image name="second" width="16" height="16"/>
+        <image name="globe_30.png" width="30" height="30"/>
+        <image name="home_30.png" width="30" height="30"/>
     </resources>
     <classes>
         <class className="bixitoListViewController" superclassName="UITableViewController">
