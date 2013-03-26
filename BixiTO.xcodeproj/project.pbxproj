@@ -13,9 +13,6 @@
 		4919B54216F4338A002BE911 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54016F4338A002BE911 /* InfoPlist.strings */; };
 		4919B54416F4338A002BE911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B54316F4338A002BE911 /* main.m */; };
 		4919B54816F4338A002BE911 /* bixitoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4919B54716F4338A002BE911 /* bixitoAppDelegate.m */; };
-		4919B54A16F4338A002BE911 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54916F4338A002BE911 /* Default.png */; };
-		4919B54C16F4338A002BE911 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54B16F4338A002BE911 /* Default@2x.png */; };
-		4919B54E16F4338A002BE911 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54D16F4338A002BE911 /* Default-568h@2x.png */; };
 		4919B55116F4338A002BE911 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4919B54F16F4338A002BE911 /* MainStoryboard_iPhone.storyboard */; };
 		4919B55916F4338A002BE911 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B55816F4338A002BE911 /* first.png */; };
 		4919B55B16F4338A002BE911 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4919B55A16F4338A002BE911 /* first@2x.png */; };
@@ -41,9 +38,6 @@
 		4919B59916F437C0002BE911 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B58F16F437C0002BE911 /* SystemConfiguration.framework */; };
 		4919B59B16F437DA002BE911 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4919B59A16F437DA002BE911 /* GoogleMaps.bundle */; };
 		4919B59D16F43B02002BE911 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4919B59C16F43B02002BE911 /* CoreText.framework */; };
-		4921562817014910001B083C /* bixi_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921562517014910001B083C /* bixi_default.png */; };
-		4921562917014910001B083C /* bixi_default_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921562617014910001B083C /* bixi_default_retina.png */; };
-		4921562A17014910001B083C /* bixi_default_4inch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921562717014910001B083C /* bixi_default_4inch.png */; };
 		4921563817014AE0001B083C /* bixi_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921563717014AE0001B083C /* bixi_icon.png */; };
 		4921563A17014AE5001B083C /* bixi_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921563917014AE5001B083C /* bixi_icon_retina.png */; };
 		4921563F17014C19001B083C /* home_30.png in Resources */ = {isa = PBXBuildFile; fileRef = 4921563D17014C19001B083C /* home_30.png */; };
@@ -84,9 +78,6 @@
 		4919B54516F4338A002BE911 /* BixiTO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BixiTO-Prefix.pch"; sourceTree = "<group>"; };
 		4919B54616F4338A002BE911 /* bixitoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bixitoAppDelegate.h; sourceTree = "<group>"; };
 		4919B54716F4338A002BE911 /* bixitoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bixitoAppDelegate.m; sourceTree = "<group>"; };
-		4919B54916F4338A002BE911 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		4919B54B16F4338A002BE911 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		4919B54D16F4338A002BE911 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4919B55016F4338A002BE911 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		4919B55816F4338A002BE911 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		4919B55A16F4338A002BE911 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
@@ -114,9 +105,6 @@
 		4919B58F16F437C0002BE911 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4919B59A16F437DA002BE911 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		4919B59C16F43B02002BE911 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		4921562517014910001B083C /* bixi_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_default.png; sourceTree = "<group>"; };
-		4921562617014910001B083C /* bixi_default_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_default_retina.png; sourceTree = "<group>"; };
-		4921562717014910001B083C /* bixi_default_4inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_default_4inch.png; sourceTree = "<group>"; };
 		4921563717014AE0001B083C /* bixi_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_icon.png; sourceTree = "<group>"; };
 		4921563917014AE5001B083C /* bixi_icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bixi_icon_retina.png; sourceTree = "<group>"; };
 		4921563D17014C19001B083C /* home_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_30.png; sourceTree = "<group>"; };
@@ -257,9 +245,6 @@
 				4919B54016F4338A002BE911 /* InfoPlist.strings */,
 				4919B54316F4338A002BE911 /* main.m */,
 				4919B54516F4338A002BE911 /* BixiTO-Prefix.pch */,
-				4919B54916F4338A002BE911 /* Default.png */,
-				4919B54B16F4338A002BE911 /* Default@2x.png */,
-				4919B54D16F4338A002BE911 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -290,9 +275,6 @@
 				492156421701514B001B083C /* globe_30@2x.png */,
 				4921563D17014C19001B083C /* home_30.png */,
 				4921563E17014C19001B083C /* globe_30.png */,
-				4921562517014910001B083C /* bixi_default.png */,
-				4921562617014910001B083C /* bixi_default_retina.png */,
-				4921562717014910001B083C /* bixi_default_4inch.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -393,9 +375,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4919B54216F4338A002BE911 /* InfoPlist.strings in Resources */,
-				4919B54A16F4338A002BE911 /* Default.png in Resources */,
-				4919B54C16F4338A002BE911 /* Default@2x.png in Resources */,
-				4919B54E16F4338A002BE911 /* Default-568h@2x.png in Resources */,
 				4919B55116F4338A002BE911 /* MainStoryboard_iPhone.storyboard in Resources */,
 				4919B55916F4338A002BE911 /* first.png in Resources */,
 				4919B55B16F4338A002BE911 /* first@2x.png in Resources */,
@@ -406,9 +385,6 @@
 				49A2880116F909E200A46585 /* btnCheck@2x.png in Resources */,
 				49B8EC1B16FA3B7A00E61E62 /* bixi_ios_icon_114.png in Resources */,
 				49B8EC1D16FA3B7E00E61E62 /* bixi_ios_icon_57.png in Resources */,
-				4921562817014910001B083C /* bixi_default.png in Resources */,
-				4921562917014910001B083C /* bixi_default_retina.png in Resources */,
-				4921562A17014910001B083C /* bixi_default_4inch.png in Resources */,
 				4921563817014AE0001B083C /* bixi_icon.png in Resources */,
 				4921563A17014AE5001B083C /* bixi_icon_retina.png in Resources */,
 				4921563F17014C19001B083C /* home_30.png in Resources */,
