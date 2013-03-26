@@ -9,11 +9,11 @@
 #import "bixitoMapViewController.h"
 #import "Station/BikeStation.h"
 
-@interface bixitoSecondViewController ()
+@interface bixitoMapViewController ()
 
 @end
 
-@implementation bixitoSecondViewController
+@implementation bixitoMapViewController
  {
     GMSMapView *mapView_;
 }

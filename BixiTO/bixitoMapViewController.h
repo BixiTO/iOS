@@ -11,7 +11,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 
 
-@interface bixitoSecondViewController : UIViewController{
+@interface bixitoMapViewController : UIViewController{
     bixitoAppDelegate* delegate;
     GMSCameraPosition *camera;
 
