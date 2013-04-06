@@ -24,5 +24,7 @@
 @property(nonatomic) int nbEmptyBikes;
 @property(nonatomic) long latestUpdateTime;
 
+- (void) setStationName:(NSString *)stationName;
+
 
 @end

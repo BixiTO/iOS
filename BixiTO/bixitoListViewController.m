@@ -115,7 +115,8 @@
     // Configure the cell...
     cell.textLabel.text = [[self.stationList objectAtIndex:indexPath.row
                             ] stationName];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d", [[self.stationList objectAtIndex:indexPath.row] stationId]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Bikes Available: %d  Empty Docks: %d", [[self.stationList objectAtIndex:indexPath.row] nbBikes],
+                                 [[self.stationList objectAtIndex:indexPath.row] nbEmptyBikes]];
     
     return cell;
 }
